@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap');
+.product-card__container,.prod-detail__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card__container{
+    background-color: white;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 2px;
+}
+
+.prod-img__container img{
+    width: 250px;
+    height: 275px;
+    
+}
+.prod-detail__container{
+    max-width: 250px;
+    margin-top: 5px;
+}
+
+.prod-name, .prod-price{
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 5px;
+}
+
+.prod-price{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.actual-mrp{
+    margin-left: 8px;
+    font-weight: 300;
+    color: rgb(161, 158, 158);
+    text-decoration: line-through;
+}
+
+.prod-price sup{
+    font-size: 12px;
+}
+
+.prod-rating i:not(:last-of-type){
+    color: rgb(241, 206, 11);
+    margin-right: 1px;
+}
