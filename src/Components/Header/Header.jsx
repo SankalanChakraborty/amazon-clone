@@ -3,20 +3,31 @@ import './Header.css';
 import logo from '../../Assets/Images/amazon-logo.png';
 import {Link} from 'react-router-dom';
 import { prodOptions, fetchProducts } from '../Utils/Fetchdata';
-import { useState } from 'react';
-import Result from '../Results/Result';
+import { useState, useContext } from 'react';
+import { SearchContext } from '../Utils/context';
+
 
 const Header = () => {
     const [search, setSearch] = useState('');
+    const {setSearchResults} = useContext(SearchContext);
 
     const onChangeHandler = (e)=>{
       setSearch(prevValue => prevValue = e.target.value);
     }
 
-    const clickHandler = async()=>{
+    const submitHandler = async(e)=>{
+      e.preventDefault();
+      if(search.trim() === ""){
+        return
+      }
       const searchProducts = await fetchProducts(`https://amazon23.p.rapidapi.com/product-search?query=${search}&country=IN`, prodOptions);
       console.log(searchProducts);
-      <Result/>
+
+      setSearchResults(()=>{
+        return [searchProducts.result]
+      });
+
+      window.open("/results", "_blank")
     }
 
   return (
@@ -24,12 +35,12 @@ const Header = () => {
       <Link to="/">
         <img className="amazon-logo" src={logo} alt="amazon" />
       </Link>
-      <div className="header-search__container">
+      <form className="header-search__container" onSubmit={submitHandler}>
         <input type="text" placeholder="Search Amazon.in" value={search} onChange={onChangeHandler}/>
-        <button className="btn-search" onClick={clickHandler}>
+        <button className="btn-search" type="submit">
           <i className="fa-solid fa-magnifying-glass"></i>
         </button>
-      </div>
+      </form>
       <div className="sign-in__section">
       <span>Hello</span>
         <Link to="/signin">

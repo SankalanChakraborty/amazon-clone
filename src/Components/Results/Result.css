@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,500&display=swap');
+
+.search-results__container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    padding: 15px;
+}
+
+.search-results__container h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}

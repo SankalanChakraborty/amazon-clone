@@ -5,6 +5,7 @@
 
 .sign-in__section, .header__orders-section, .header__prime-section, .header-cart__container{
     align-items: center;
+    height: 100%;
 }
 
 .header__container{
@@ -32,7 +33,7 @@
     color: rgb(186, 184, 184);
 }
 
-.header-cart__container i ,.sign-in__section span:last-of-type, .header__orders-section span:last-of-type, .header__prime-section span:last-of-type, .header-cart__container span:first-of-type{
+.header-cart__container i ,.sign-in__section a b, .header__orders-section span:last-of-type, .header__prime-section span:last-of-type, .header-cart__container span:first-of-type{
     color: white;
 }
 
@@ -67,7 +68,7 @@
     width: 80px;
 }
 
-.sign-in__section a{
+.header__container a{
     text-decoration: none;
 }
 
@@ -80,5 +81,8 @@
     font-size: small;
 }
 
-
+.header__container div:hover{
+    border: 1px solid white;
+    border-radius: 4px;
+}
 

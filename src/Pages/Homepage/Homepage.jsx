@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from '../../Components/Carousel/Carousel';
 import Product from '../../Components/Product/Product';
-import { products } from '../../Components/productData';
+import { products } from '../../Components/Utils/productData';
 import './Homepage.css';
 import Navbar from '../../Components/Navbar/Navbar';
 
