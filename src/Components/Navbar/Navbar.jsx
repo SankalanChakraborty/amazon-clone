@@ -1,15 +1,12 @@
 import React from 'react';
 import './Navbar.css';
 import {Link} from 'react-router-dom';
-import { faker } from '@faker-js/faker';
-import primeLogo from '../../Assets/Images/nav-prime-logo.png';
+// import primeLogo from '../../Assets/Images/nav-prime-logo.png';
 import navbarImage from '../../Assets/Images/navbar-image.jpg';
 
 const Navbar = () => {
     const showPrimeFeatures = ()=>{
-        console.log("Prime");
-        console.log(faker.commerce);
-        console.log(faker.image);
+
     }
   return (
     <>

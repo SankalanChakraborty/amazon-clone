@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap');
-.sign-in__container ,.sign-in__form-control form, .email, .password{
+.sign-in__container ,.sign-in__form-control form, .email, .password, .new-user__section{
     display: flex;
     flex-direction: column;
 }
@@ -58,6 +58,22 @@
     transition: all 0.3s ease-in-out;
 }
 
-.sign-in__form-control button:hover{
-    background-color: #edcb1e;
+.new-user__section{
+    margin-top: 20px;
+    align-items: center;
+}
+
+.new-user__section p{
+    font-size: 12px;
+    color: rgb(81, 78, 78);
+    margin-bottom: 10px;
+}
+
+.new-user__section button{
+    width: 290px;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    outline: none;
+    cursor: pointer;
 }
