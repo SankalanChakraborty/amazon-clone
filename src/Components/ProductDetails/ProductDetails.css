@@ -19,7 +19,7 @@
 .product-information{
     width: 50%;
     margin-right: 20px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     border-radius: 4px;
     padding: 15px;
 }
@@ -32,10 +32,16 @@
     font-weight: 500;
 }
 
+
 .price-and-discount__details{
     display: flex;
     flex-direction: column;
     margin: 20px 0;
+    font-weight: 200;
+}
+
+.price-and-discount__details div{
+    margin: 10px 0;
 }
 
 .price-and-discount__details sup{
@@ -45,8 +51,8 @@
 
 .product-price{
     font-size: 40px;
-    font-weight: 300;
-    margin-right: 10px;
+    font-weight: 500;
+    margin-right: 15px;
 }
 
 .product-discount{
@@ -55,10 +61,46 @@
 }
 
 .product-mrp{
-    font-weight: 200;
     color: rgb(112, 112, 112);
 }
 
 .product-mrp span{
     text-decoration: line-through;
+}
+
+.savings{
+    font-weight: 500;
+}
+
+.delivery-details label{
+    color: #0066c0;
+    font-weight: 500;
+}
+
+.btn{
+    width: 150px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.buy-now{
+    background-color: #ff941a;
+    margin-right: 8px;
+}
+
+.buy-now:hover{
+    background-color: #e87d03;
+}
+
+.add-to-cart{
+    background-color: #ffc42f;
+}
+
+.add-to-cart:hover{
+    background-color: #efab00;
 }
