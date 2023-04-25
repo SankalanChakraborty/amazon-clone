@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;500;700&display=swap');
+.product-details__container, .product-image__container{
+    display: flex;
+    justify-content: center;
+}
+.product-image__container, .product-information{
+    margin: 20px 0;
+}
+
+.product-image__container{
+    width: 50%;
+    height: 400px;
+}
+
+.product-image__container img{
+    margin-top: 30px;
+}
+
+.product-information{
+    width: 50%;
+    margin-right: 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.product-information{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.product-information h1{
+    font-weight: 500;
+}
+
+.price-and-discount__details{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.price-and-discount__details sup{
+    font-size: 25px;
+    margin-right: 1px;
+}
+
+.product-price{
+    font-size: 40px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.product-discount{
+    color: rgb(219, 44, 44);
+    font-size: 20px;
+}
+
+.product-mrp{
+    font-weight: 200;
+    color: rgb(112, 112, 112);
+}
+
+.product-mrp span{
+    text-decoration: line-through;
+}
