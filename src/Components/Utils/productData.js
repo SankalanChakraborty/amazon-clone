@@ -1,69 +1,163 @@
 export const products = [
     { 
         id: 'product1',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70',
+        url: 'https://www.amazon.in/dp/B085XV2XNV',
+        thumbnail: 'https://m.media-amazon.com/images/I/81WtzO3X2pL._AC_UL320_.jpg',
         title: {
-            shortTitle: 'Home & Kitchen',
-            longTitle: 'Pigeon FAVOURITE Electric Kettle  (1.5 L, Silver, Black)'
+            shortTitle: 'Vector X NEO Rubber Moulded Football',
+            longTitle: 'Vector X NEO Rubber Moulded Football, Size 5 (White-Red-Black)'
         }, 
         price: {
-            mrp: 1195,
-            cost: 625,
-            discount: '47%'
+            mrp: 549,
+            cost: 369,
+            discount: '32.79%'
         },
-        description: 'This electric kettle from Pigeon will soon become a travelers best friend, a hostelite saviour and an answer to all the midnight cravings. With this handy appliance, you can boil water and use it to make instant noodles, packet soup, coffee and green tea.',
         discount: 'Extra 10% Off', 
         tagline: 'Deal of the day' 
     },
     { 
         id: 'product2',
-        url: 'https://rukminim1.flixcart.com/image/416/416/kl6wx3k0/sandwich-maker/8/r/d/sandwich-01-flipkart-smartbuy-original-imagydds4zthxt8z.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kl6wx3k0/sandwich-maker/8/r/d/sandwich-01-flipkart-smartbuy-original-imagydds4zthxt8z.jpeg?q=70',
+        url: 'https://www.amazon.in/dp/B08DS5SC8H', 
+        thumbnail: 'https://m.media-amazon.com/images/I/71bVjdpp+NL._AC_UL320_.jpg',
         title: {
-            shortTitle: 'Sandwich Makers',
-            longTitle: 'Flipkart SmartBuy Sandwich 01 Grill  (Black)'
+            shortTitle: 'Kore PVC DM 4-40 Kg',
+            longTitle: 'Kore PVC DM 4-40 Kg (Black/Black-Red/3 IN 1 Convertible) Dumbbells Set and Fitness Kit for Men and Women Whole Body Workout'
         },
         price: {
-            mrp: 1499,
-            cost: 899,
-            discount: '40%'
+            mrp: 2670,
+            cost: 649,
+            discount: '75.69%'
         },
-        description: 'This non-stick sandwich toaster .easy to use and very handy. Directly hold over flame to make tasty toasts and toasted sandwiches. Specially designed by keeping your needs in mind, the sandwich maker makes whatever youre doing simpler, smarter and better',
         discount: 'From 99+5% Off', 
         tagline: 'Pestige, Nova & more' 
     },
     { 
         id: 'product3',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
+        url: 'https://www.amazon.in/dp/8172234988',
+        thumbnail:"https://m.media-amazon.com/images/I/71aFt4+OTOL._AC_UY218_.jpg",
         title: {
-            shortTitle: 'Fitness Gear',
-            longTitle: 'AJRO DEAL New Adjustable Single Resistance Tube (Multicolor)'
+            shortTitle: 'The Alchemist',
+            longTitle: 'The Alchemist - By Paulo Coelho'
         }, 
         price: {
-            mrp: 499,
-            cost: 166,
-            discount: '66%'
+            mrp: 350,
+            cost: 249,
+            discount: '28.86%'
         },
-        description: 'This unique product can tone your back muscles, reduce belly fat, improve blood circulation and also improves your body posture. It increases the stamina, energy and vitality of the body. The elastic resistance of the rubber training rope can be used to train and exercise in whichever way you want, according to your physical needs.',
+        
         discount: 'Upto 70% Off', 
         tagline: 'Deal of the Day' 
     },
     { 
         id: 'product4',
-        url: 'https://rukminim1.flixcart.com/image/300/300/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70',
+        url: 'https://www.amazon.in/dp/B089M9HVQP', 
+        thumbnail: "https://m.media-amazon.com/images/I/81wGn2TQJeL._AC_UY218_.jpg",
         title: {
-            shortTitle: 'Smart Watches',
-            longTitle: 'Molife Sense 500 Smartwatch  (Black Strap, Freesize)',
+            shortTitle: 'Leader Scout MTB 26T Mountain Bicycle',
+            longTitle: 'Leader Scout MTB 26T Mountain Bicycle/Bike Without Gear Single Speed for Men - Sea Green, Ideal for 10 + Years',
         }, 
         price: {
-            mrp: 6999,
-            cost: 4049,
-            discount: '42%'
+            mrp: 7500,
+            cost: 4499,
+            discount: '40.01%'
         },
-        description: 'The Molife Sense 500, a brilliant smartwatch with a beautiful large display. Say hello to the infinity 1.7-inch display with 2.5D curved edges. Thanks to seamless Bluetooth 5.0 connectivity, you wont have to keep waiting. Bring a change to your outfit every day with changeable straps. A splash of color every day keeps the boredom away.',
+        
+        discount: 'Grab Now', 
+        tagline: 'Best Seller' 
+    },
+    { 
+        id: 'product5',
+        url: "https://www.amazon.in/dp/B08P2M3249", 
+        thumbnail: 'https://m.media-amazon.com/images/I/61zne3JPlQS._AC_UY218_.jpg',
+        title: {
+            shortTitle: 'Canon M50 Mark II',
+            longTitle: 'Canon M50 Mark II 15-45mm f3.5-6.3 is STM',
+        }, 
+        price: {
+            mrp: 60995,
+            cost: 59990,
+            discount: '1.65%'
+        },
+        discount: 'Grab Now', 
+        tagline: 'Best Seller' 
+    },
+    { 
+        id: 'product6',
+        url: "https://www.amazon.in/dp/B0BDHX8Z63",
+        thumbnail:"https://m.media-amazon.com/images/I/61cwywLZR-L._AC_UY218_.jpg",
+        title: {
+            shortTitle: 'Apple iPhone 14',
+            longTitle: 'Apple iPhone 14 (128 GB) - Midnight',
+        }, 
+        price: {
+            mrp: 79900,
+            cost: 71999,
+            discount: '9.89%'
+        },
+        discount: 'Grab Now', 
+        tagline: 'Best Seller' 
+    },
+    { 
+        id: 'product7',
+        url: "https://www.amazon.in/dp/B0BRCP72X8", 
+        thumbnail: "https://m.media-amazon.com/images/I/51mWHXY8hyL._AC_UY218_.jpg",
+        title: {
+            shortTitle: 'Sony PS5 PlayStation Console',
+            longTitle: 'Sony PS5 PlayStation Console',
+        }, 
+        price: {
+            mrp: 54990,
+            cost: 49990,
+            discount: '9.09%'
+        },
+        discount: 'Grab Now', 
+        tagline: 'Best Seller' 
+    },
+    { 
+        id: 'product8',
+        url: "https://www.amazon.in/dp/B0BT9CXXXX", 
+        thumbnail: "https://m.media-amazon.com/images/I/61VfL-aiToL._AC_UY218_.jpg",
+        title: {
+            shortTitle: 'Samsung Galaxy S23 Ultra',
+            longTitle: 'Samsung Galaxy S23 Ultra 5G (Green, 12GB, 256GB Storage)',
+        }, 
+        price: {
+            mrp: 149999,
+            cost: 124999,
+            discount: '16.67%'
+        },
+        discount: 'Grab Now', 
+        tagline: 'Best Seller' 
+    },
+    { 
+        id: 'product9',
+        url: "https://www.amazon.in/dp/B07RJWB548", 
+        thumbnail: "https://m.media-amazon.com/images/I/81cEKnH692L._AC_UY218_.jpg",
+        title: {
+            shortTitle: 'Canon EOS 200D II',
+            longTitle: 'Canon EOS 200D II 24.1MP Digital SLR Camera + EF-S 18-55mm f4 is STM Lens (Black)',
+        }, 
+        price: {
+            mrp: 61995,
+            cost: 60600,
+            discount: '2.25%'
+        },
+        discount: 'Grab Now', 
+        tagline: 'Best Seller' 
+    },
+    { 
+        id: 'product10',
+        url: "https://www.amazon.in/dp/B002DYIZH6", 
+        thumbnail: "https://m.media-amazon.com/images/I/71W2pH7QJBL._AC_UL400_.jpg",
+        title: {
+            shortTitle: 'Optimum Nutrition (ON) Gold Standard 100% Whey',
+            longTitle: 'Optimum Nutrition (ON) Gold Standard 100% Whey (2 lbs/907 g) (Double Rich Chocolate) Protein Powder for Muscle Building',
+        }, 
+        price: {
+            mrp: 3899,
+            cost: 3314,
+            discount: '15%'
+        },
         discount: 'Grab Now', 
         tagline: 'Best Seller' 
     },

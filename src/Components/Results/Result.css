@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap');
 
 .search-results__container{
     width: 100%;
@@ -7,7 +8,61 @@
     padding: 15px;
 }
 
-.search-results__container h2{
+.search-results__container h2:first-of-type{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+}
+
+.item-image__container, .item-details__container{
+    padding: 0 15px;
+}
+
+.item-image__container{
+    max-width: 500px;
+    background-color: rgb(249, 249, 249);
+}
+
+.search-result__item,.price-breakup{
+    display: flex;
+}
+
+.search-result__item{
+    margin: 8px 0;
+    border: 0.5px solid rgb(199, 196, 196);
+}
+
+.item-details__container, .price-breakup{
+    font-family: 'Nunito', sans-serif;
+}
+
+.price-breakup{
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 300;
+}
+
+.price-breakup sup{
+    font-size: 20px;
+}
+
+.price-breakup span{
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 1px;
+    margin-right: 10px;
+}
+
+.bank-cards-offer{
+    color: #565959;
+}
+
+.price-breakup h4:first-of-type{
+    color: rgb(71, 71, 71);
+    font-weight: 300;
+    text-decoration: line-through;
+    margin-right: 10px
+}
+
+.price-breakup h4:last-of-type{
+    font-weight: 400;
 }

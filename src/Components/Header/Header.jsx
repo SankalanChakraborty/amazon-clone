@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import logo from '../../Assets/Images/amazon-logo.png';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { prodOptions, fetchProducts } from '../Utils/Fetchdata';
 import { useState, useContext } from 'react';
 import { SearchContext } from '../Utils/context';
@@ -10,7 +10,7 @@ import { SearchContext } from '../Utils/context';
 const Header = () => {
     const [search, setSearch] = useState('');
     const {setSearchResults} = useContext(SearchContext);
-
+    const Navigate = useNavigate();
     const onChangeHandler = (e)=>{
       setSearch(prevValue => prevValue = e.target.value);
     }
@@ -27,7 +27,7 @@ const Header = () => {
         return [searchProducts.result]
       });
 
-      window.open("/results", "_blank")
+      searchProducts.result && Navigate("/results", {state: searchProducts.result});
     }
 
   return (
