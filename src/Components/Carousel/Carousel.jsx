@@ -7,7 +7,7 @@ const Carousel = () => {
     const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Home/AmazonTV/Ravina/Push/3000x1200_Hunter_V7._CB592913261_.jpg" onDragStart={handleDragStart} alt="banner" />,
+    <img src="https://m.media-amazon.com/images/I/71ok3qpbCWL._SX3000_.jpg" onDragStart={handleDragStart} alt="banner" />,
     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Sports/April/Getfitdays/GW/Hero/Unrec/Graphic-6-3000X1200-unrec._CB590412541_.jpg" onDragStart={handleDragStart} alt="banner" />,
     <img src="https://m.media-amazon.com/images/I/51ovs76vmtL._SX3000_.jpg" onDragStart={handleDragStart} alt="banner" />,
     <img src="https://m.media-amazon.com/images/I/61+Om+g+8SL._SX3000_.jpg" onDragStart={handleDragStart} alt="banner" />,
