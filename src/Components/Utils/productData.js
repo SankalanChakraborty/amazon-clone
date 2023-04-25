@@ -1,6 +1,6 @@
 export const products = [
     { 
-        id: 'product1',
+        id: "B085XV2XNV",
         url: 'https://www.amazon.in/dp/B085XV2XNV',
         thumbnail: 'https://m.media-amazon.com/images/I/81WtzO3X2pL._AC_UL320_.jpg',
         title: {
@@ -16,40 +16,7 @@ export const products = [
         tagline: 'Deal of the day' 
     },
     { 
-        id: 'product2',
-        url: 'https://www.amazon.in/dp/B08DS5SC8H', 
-        thumbnail: 'https://m.media-amazon.com/images/I/71bVjdpp+NL._AC_UL320_.jpg',
-        title: {
-            shortTitle: 'Kore PVC DM 4-40 Kg',
-            longTitle: 'Kore PVC DM 4-40 Kg (Black/Black-Red/3 IN 1 Convertible) Dumbbells Set and Fitness Kit for Men and Women Whole Body Workout'
-        },
-        price: {
-            mrp: 2670,
-            cost: 649,
-            discount: '75.69%'
-        },
-        discount: 'From 99+5% Off', 
-        tagline: 'Pestige, Nova & more' 
-    },
-    { 
-        id: 'product3',
-        url: 'https://www.amazon.in/dp/8172234988',
-        thumbnail:"https://m.media-amazon.com/images/I/71aFt4+OTOL._AC_UY218_.jpg",
-        title: {
-            shortTitle: 'The Alchemist',
-            longTitle: 'The Alchemist - By Paulo Coelho'
-        }, 
-        price: {
-            mrp: 350,
-            cost: 249,
-            discount: '28.86%'
-        },
-        
-        discount: 'Upto 70% Off', 
-        tagline: 'Deal of the Day' 
-    },
-    { 
-        id: 'product4',
+        id: "B089M9HVQP",
         url: 'https://www.amazon.in/dp/B089M9HVQP', 
         thumbnail: "https://m.media-amazon.com/images/I/81wGn2TQJeL._AC_UY218_.jpg",
         title: {
@@ -66,7 +33,7 @@ export const products = [
         tagline: 'Best Seller' 
     },
     { 
-        id: 'product5',
+        id: "B08P2M3249",
         url: "https://www.amazon.in/dp/B08P2M3249", 
         thumbnail: 'https://m.media-amazon.com/images/I/61zne3JPlQS._AC_UY218_.jpg',
         title: {
@@ -82,7 +49,7 @@ export const products = [
         tagline: 'Best Seller' 
     },
     { 
-        id: 'product6',
+        id: "B0BDHX8Z63",
         url: "https://www.amazon.in/dp/B0BDHX8Z63",
         thumbnail:"https://m.media-amazon.com/images/I/61cwywLZR-L._AC_UY218_.jpg",
         title: {
@@ -98,7 +65,40 @@ export const products = [
         tagline: 'Best Seller' 
     },
     { 
-        id: 'product7',
+        id: "8172234988",
+        url: 'https://www.amazon.in/dp/8172234988',
+        thumbnail:"https://m.media-amazon.com/images/I/71aFt4+OTOL._AC_UY218_.jpg",
+        title: {
+            shortTitle: 'The Alchemist',
+            longTitle: 'The Alchemist - By Paulo Coelho'
+        }, 
+        price: {
+            mrp: 350,
+            cost: 249,
+            discount: '28.86%'
+        },
+        
+        discount: 'Upto 70% Off', 
+        tagline: 'Deal of the Day' 
+    },
+    { 
+        id: "B08WKL4SCX",
+        url: 'https://www.amazon.in/dp/B08DS5SC8H', 
+        thumbnail: 'https://m.media-amazon.com/images/I/71bVjdpp+NL._AC_UL320_.jpg',
+        title: {
+            shortTitle: 'Kore PVC DM 4-40 Kg',
+            longTitle: 'Kore PVC DM 4-40 Kg (Black/Black-Red/3 IN 1 Convertible) Dumbbells Set and Fitness Kit for Men and Women Whole Body Workout'
+        },
+        price: {
+            mrp: 2670,
+            cost: 649,
+            discount: '75.69%'
+        },
+        discount: 'From 99+5% Off', 
+        tagline: 'Pestige, Nova & more' 
+    },
+    { 
+        id: "B0BXRSNB6Z",
         url: "https://www.amazon.in/dp/B0BRCP72X8", 
         thumbnail: "https://m.media-amazon.com/images/I/51mWHXY8hyL._AC_UY218_.jpg",
         title: {
@@ -114,7 +114,7 @@ export const products = [
         tagline: 'Best Seller' 
     },
     { 
-        id: 'product8',
+        id: "B0BT9CXXXX",
         url: "https://www.amazon.in/dp/B0BT9CXXXX", 
         thumbnail: "https://m.media-amazon.com/images/I/61VfL-aiToL._AC_UY218_.jpg",
         title: {
@@ -130,7 +130,7 @@ export const products = [
         tagline: 'Best Seller' 
     },
     { 
-        id: 'product9',
+        id: "B07RJWB548",
         url: "https://www.amazon.in/dp/B07RJWB548", 
         thumbnail: "https://m.media-amazon.com/images/I/81cEKnH692L._AC_UY218_.jpg",
         title: {
@@ -146,7 +146,7 @@ export const products = [
         tagline: 'Best Seller' 
     },
     { 
-        id: 'product10',
+        id: "B002DYIZH6",
         url: "https://www.amazon.in/dp/B002DYIZH6", 
         thumbnail: "https://m.media-amazon.com/images/I/71W2pH7QJBL._AC_UL400_.jpg",
         title: {

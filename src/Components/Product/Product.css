@@ -5,10 +5,12 @@
 }
 
 .product-card__container{
+    align-items: center;
     background-color: white;
     padding: 10px;
     margin: 10px 10px;
     border-radius: 2px;
+    box-shadow: 2px 2px 3px rgb(211, 211, 211);
 }
 
 .prod-img__container img{
@@ -17,8 +19,18 @@
     
 }
 .prod-detail__container{
-    max-width: 250px;
+    max-width: 300px;
     margin-top: 5px;
+}
+
+.prod-detail__container a{
+    text-decoration: none;
+    color: black;
+}
+
+.prod-detail__container a:hover{
+    color: rgb(209, 128, 6);
+    text-decoration: underline;
 }
 
 .prod-name, .prod-price{
@@ -32,6 +44,7 @@
 }
 
 .actual-mrp{
+    font-size: medium;
     margin-left: 8px;
     font-weight: 300;
     color: rgb(161, 158, 158);
