@@ -11,9 +11,7 @@ export const products = [
             mrp: 549,
             cost: 369,
             discount: '32.79%'
-        },
-        discount: 'Extra 10% Off', 
-        tagline: 'Deal of the day' 
+        }
     },
     { 
         id: "B089M9HVQP",
@@ -27,10 +25,7 @@ export const products = [
             mrp: 7500,
             cost: 4499,
             discount: '40.01%'
-        },
-        
-        discount: 'Grab Now', 
-        tagline: 'Best Seller' 
+        }
     },
     { 
         id: "B08P2M3249",
@@ -44,9 +39,7 @@ export const products = [
             mrp: 60995,
             cost: 59990,
             discount: '1.65%'
-        },
-        discount: 'Grab Now', 
-        tagline: 'Best Seller' 
+        }
     },
     { 
         id: "B0BDHX8Z63",
@@ -60,9 +53,7 @@ export const products = [
             mrp: 79900,
             cost: 71999,
             discount: '9.89%'
-        },
-        discount: 'Grab Now', 
-        tagline: 'Best Seller' 
+        } 
     },
     { 
         id: "8172234988",
@@ -76,10 +67,7 @@ export const products = [
             mrp: 350,
             cost: 249,
             discount: '28.86%'
-        },
-        
-        discount: 'Upto 70% Off', 
-        tagline: 'Deal of the Day' 
+        } 
     },
     { 
         id: "B08WKL4SCX",
@@ -93,9 +81,7 @@ export const products = [
             mrp: 2670,
             cost: 649,
             discount: '75.69%'
-        },
-        discount: 'From 99+5% Off', 
-        tagline: 'Pestige, Nova & more' 
+        }
     },
     { 
         id: "B0BXRSNB6Z",
@@ -109,9 +95,7 @@ export const products = [
             mrp: 54990,
             cost: 49990,
             discount: '9.09%'
-        },
-        discount: 'Grab Now', 
-        tagline: 'Best Seller' 
+        }
     },
     { 
         id: "B0BT9CXXXX",
@@ -125,9 +109,7 @@ export const products = [
             mrp: 149999,
             cost: 124999,
             discount: '16.67%'
-        },
-        discount: 'Grab Now', 
-        tagline: 'Best Seller' 
+        } 
     },
     { 
         id: "B07RJWB548",
@@ -141,9 +123,7 @@ export const products = [
             mrp: 61995,
             cost: 60600,
             discount: '2.25%'
-        },
-        discount: 'Grab Now', 
-        tagline: 'Best Seller' 
+        }
     },
     { 
         id: "B002DYIZH6",
@@ -157,9 +137,7 @@ export const products = [
             mrp: 3899,
             cost: 3314,
             discount: '15%'
-        },
-        discount: 'Grab Now', 
-        tagline: 'Best Seller' 
+        } 
     },
     
 ]

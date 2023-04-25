@@ -6,14 +6,17 @@ import Homepage from './Pages/Homepage/Homepage';
 import SignIn from './Components/SignIn/SignIn';
 import SignUp from './Components/SignUp/SignUp';
 import Result from './Components/Results/Result';
-import { SearchContext } from './Components/Utils/context';
+import { ProductContext } from './Components/Utils/context';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
+  console.log(cartItems);
+
   const [searchResults, setSearchResults] = useState([]);
   return (
     <BrowserRouter>
-      <SearchContext.Provider value={{searchResults, setSearchResults}}>
+      <ProductContext.Provider value={{cartItems, setCartItems, searchResults, setSearchResults}}>
         <Header/>
         <div className="App">
           <Routes>
@@ -24,7 +27,7 @@ function App() {
             <Route path="/results" element={<Result/>}/>
           </Routes>
         </div>
-      </SearchContext.Provider>
+      </ProductContext.Provider>
     </BrowserRouter>
       
    

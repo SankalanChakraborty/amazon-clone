@@ -4,12 +4,12 @@ import logo from '../../Assets/Images/amazon-logo.png';
 import {Link, useNavigate} from 'react-router-dom';
 import { prodOptions, fetchProducts } from '../Utils/Fetchdata';
 import { useState, useContext } from 'react';
-import { SearchContext } from '../Utils/context';
+import { ProductContext } from '../Utils/context';
 
 
 const Header = () => {
     const [search, setSearch] = useState('');
-    const {setSearchResults} = useContext(SearchContext);
+    const {cartItems, setSearchResults} = useContext(ProductContext);
     const Navigate = useNavigate();
     const onChangeHandler = (e)=>{
       setSearch(prevValue => prevValue = e.target.value);
@@ -55,12 +55,13 @@ const Header = () => {
           <span>Your</span>
           <span><b>Prime</b></span>
       </div>
-      <Link to="/cart">
-        <div className="header-cart__container">
-          <span>Cart</span>
-          <i className="fa-sharp fa-solid fa-cart-shopping"/>
-        </div>   
-      </Link>
+      <div className="header-cart__container">
+        <Link to="/cart">
+            <span>Cart</span>
+            <i className="fa-sharp fa-solid fa-cart-shopping"/>
+            {cartItems.length ? <span className="number-of-cart-items">{cartItems.length}</span> : ""}
+        </Link>
+      </div>   
     </div>
   )
 }

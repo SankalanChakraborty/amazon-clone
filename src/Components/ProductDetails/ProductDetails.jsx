@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { products } from '../Utils/productData';
 import './ProductDetails.css';
 import { deliveryTimeline } from '../Utils/getDate';
+import { ProductContext } from '../Utils/context';
 
 const ProductDetails = () => {
+    const {cartItems, setCartItems} = useContext(ProductContext);
+
     const {id} = useParams();
     const getProduct = (product)=>{
         return product.id === id
     }
     const product = products.find(getProduct);
+    console.log(product);
     const savings =  (Number(product.price.mrp))-(Number(product.price.cost));
+
+    const addToCartHandler = ()=>{
+        setCartItems(prevValue=>{
+            return [...prevValue, product];
+        })
+        console.log(cartItems);
+    }
 
   return (
     <div className="product-details__container">
@@ -35,7 +46,7 @@ const ProductDetails = () => {
             <span><strong>Fastest delivery by 2pm Tomorrow</strong></span>
             <div className="action-buttons__container">
                 <button className="btn buy-now">Buy Now</button>
-                <button className="btn add-to-cart">Add to Cart</button>
+                <button className="btn add-to-cart" onClick={addToCartHandler}>Add to Cart</button>
             </div>
         </div>
       </div>
