@@ -8,6 +8,7 @@ import SignUp from './Components/SignUp/SignUp';
 import Result from './Components/Results/Result';
 import { ProductContext } from './Components/Utils/context';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
+import Cart from './Components/Cart/Cart';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -25,6 +26,7 @@ function App() {
             <Route path="/signin" element={<SignIn/>}/>
             <Route path="/signup" element={<SignUp/>}/>
             <Route path="/results" element={<Result/>}/>
+            <Route path="/cart" element={<Cart/>}/>
           </Routes>
         </div>
       </ProductContext.Provider>

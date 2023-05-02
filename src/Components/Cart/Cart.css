@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+.item-details__container, .cart__container, .delivery-details, .heading{
+    display: flex;
+}
+
+.heading{
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px ;
+    border-bottom: 1px solid gray;
+    font-family: 'Nunito', sans-serif;
+}
+
+.item-details__container{
+    margin-top: 20px;
+    width: 75%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgb(201, 199, 199);
+}
+
+.prod-details > span{
+    font-size: 30px;
+}
+
+.cart__container, .delivery-details{
+    flex-direction: column;
+}
+
+.delivery-details span{
+    margin: 5px 0;
+}
+
+.delivery-details span:first-of-type{
+    color: orange;
+}
+
+.delivery-details span:last-of-type{
+    color: rgb(70, 69, 69);
+}
+
+.cart-product-image__container{
+    width: 200px;
+    height: 175px;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.cart-product-image__container img{
+    width: 100%;
+    height: 100%;
+}
