@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
-.item-details__container, .cart__container, .delivery-details, .heading{
+.item-details__container, .cart__container, .delivery-details, .heading, .checkout-section, .delivery-options{
     display: flex;
 }
 
@@ -15,7 +15,6 @@
 
 .item-details__container{
     margin-top: 20px;
-    width: 75%;
     height: auto;
     border-radius: 4px;
     box-shadow: 2px 2px 3px rgb(201, 199, 199);
@@ -25,11 +24,15 @@
     font-size: 30px;
 }
 
-.cart__container, .delivery-details{
+.cart-items{
+    width: 70%;
+}
+
+.cart-items, .delivery-details, .checkout-section, .delivery-options{
     flex-direction: column;
 }
 
-.delivery-details span{
+.delivery-details span, .delivery-options span{
     margin: 5px 0;
 }
 
@@ -52,3 +55,46 @@
     width: 100%;
     height: 100%;
 }
+
+.checkout-section{
+    margin-top: 20px;
+    align-items: center;
+    width: 30%;
+}
+
+.amazon-original-image__container{
+    width: 350px;
+    height: 50px;
+}
+
+.amazon-original-image__container img{
+    width: 100%;
+    height: 100%;
+}
+
+.delivery-options{
+    width: 350px;
+    height: 200px;
+    padding: 5px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 3px rgb(201, 199, 199);
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.delivery-options span:first-of-type{
+    color: rgb(0, 145, 255);
+}
+
+.btn-checkout{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #ffc42f;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
