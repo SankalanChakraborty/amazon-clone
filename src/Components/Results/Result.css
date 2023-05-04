@@ -35,6 +35,17 @@
     font-family: 'Nunito', sans-serif;
 }
 
+.item-details__container a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.item-details__container a:hover{
+    color: rgb(209, 128, 6);
+    text-decoration: underline;
+}
+
 .price-breakup{
     flex-wrap: wrap;
     align-items: center;

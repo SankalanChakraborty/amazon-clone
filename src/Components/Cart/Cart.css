@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
-.item-details__container, .cart__container, .delivery-details, .heading, .checkout-section, .delivery-options{
+.cart-item-details__container, .cart__container, .delivery-details, .heading, .checkout-section, .delivery-options{
     display: flex;
 }
 
@@ -10,14 +10,17 @@
     height: 50px;
     padding: 10px ;
     border-bottom: 1px solid gray;
-    font-family: 'Nunito', sans-serif;
 }
 
-.item-details__container{
+.cart-item-details__container{
     margin-top: 20px;
     height: auto;
     border-radius: 4px;
     box-shadow: 2px 2px 3px rgb(201, 199, 199);
+}
+
+.prod-details, .heading{
+    font-family: 'Nunito', sans-serif;
 }
 
 .prod-details > span{

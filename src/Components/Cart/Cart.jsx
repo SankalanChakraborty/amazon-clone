@@ -22,7 +22,7 @@ const Cart = () => {
         <div className="cart-items">
       {cartItems.map(cartItem=>{
           return (
-              <div key={cartItem.id} className="item-details__container">
+              <div key={cartItem.id} className="cart-item-details__container">
                   <div className="cart-product-image__container">
                       <img src={cartItem.thumbnail} alt={cartItem.title.shortTitle} />
                   </div>
