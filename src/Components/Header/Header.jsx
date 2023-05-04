@@ -26,7 +26,7 @@ const Header = () => {
       setSearchResults(()=>{
         return [searchProducts.result]
       });
-
+      setSearch('');
       searchProducts.result && Navigate("/results", {state: searchProducts.result});
     }
 
