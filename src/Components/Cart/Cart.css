@@ -75,11 +75,11 @@
 .delivery-options{
     width: 350px;
     height: 200px;
+    justify-content: space-evenly;
     padding: 5px;
     margin-top: 20px;
     box-shadow: 2px 2px 3px rgb(201, 199, 199);
     font-family: 'Nunito', sans-serif;
-
 }
 
 .delivery-options span:first-of-type{
@@ -98,3 +98,19 @@
     cursor: pointer;
 }
 
+.empty-cart{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn-removeCartItem{
+    padding: 5px;
+    width: 100px;
+    margin: 5px 0;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: rgb(44, 154, 250);
+    cursor: pointer;
+}

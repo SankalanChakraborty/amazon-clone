@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 const Cart = () => {
     const [subTotal, setSubTotal] = useState(0);
-    const {cartItems} = useContext(ProductContext);
+    const {cartItems, setCartItems} = useContext(ProductContext);
 
     useEffect(()=>{
       setSubTotal(cartItems.reduce((acc, currentItem)=> acc+Number(currentItem.price.cost), 0))
@@ -18,11 +18,11 @@ const Cart = () => {
     <div className="heading">
       <h1>Shopping Cart</h1>
     </div>
-      <div className="cart__container">
+      {cartItems.length ? <div className="cart__container">
         <div className="cart-items">
       {cartItems.map(cartItem=>{
           return (
-              <div className="item-details__container">
+              <div key={cartItem.id} className="item-details__container">
                   <div className="cart-product-image__container">
                       <img src={cartItem.thumbnail} alt={cartItem.title.shortTitle} />
                   </div>
@@ -31,6 +31,11 @@ const Cart = () => {
                       <div className="delivery-details">
                         <span>Usually dispatched in 2-3 days</span>
                         <span>Eligible for FREE Shipping</span>
+                        <button className="btn-removeCartItem" onClick={()=>{
+                          setCartItems(cartItems.filter((item)=> {
+                              return item.id !== cartItem.id;
+                            }))
+                        }}>Remove</button>
                       </div>
                   </div>
               </div>
@@ -50,7 +55,7 @@ const Cart = () => {
               </div>
             </div>
         </div>
-      </div>
+      </div> : <div className="empty-cart">Your cart is empty</div>}
     </>
   )
 }
