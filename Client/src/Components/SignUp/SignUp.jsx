@@ -17,9 +17,8 @@ const SignUp = () => {
   });
 
   const checkformValidation = (e)=>{
-    console.log(e.target);
-    console.log(e.target.value);
-    if(newUserData.setPassword === newUserData.confirmPassword){
+
+    if(newUserData.setPassword === "" && newUserData.confirmPassword === ""){
       setError({
         passwordShort: false,
         passwordDontMatch: false
