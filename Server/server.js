@@ -20,7 +20,19 @@ app.post("/signin", async (req, res) => {
     console.log(checkUser.rows);
 
     if (!checkUser.rows.length) {
-      return res.status(400).json("User is not registered with amazon");
+      return res.status(404).json("Incorrect email");
+    }
+
+    if (checkUser.rows.length) {
+      const response = await bcrypt.compare(
+        password,
+        checkUser.rows[0].password
+      );
+      if (response) {
+        res.status(200).json("Login successful");
+      } else {
+        res.status(404).json("Incorrect password");
+      }
     }
   } catch (err) {
     console.error(err);

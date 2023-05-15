@@ -4,6 +4,8 @@ import logoBlack from "../../Assets/Images/amazon-logo-black.png";
 import { Link } from "react-router-dom";
 
 const SignIn = () => {
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setpasswordError] = useState("");
   const [logData, setLogData] = useState({
     email: "",
     password: "",
@@ -11,6 +13,16 @@ const SignIn = () => {
 
   const setLoginData = (e) => {
     const { name, value } = e.target;
+
+    // Clearing out validation errors if any
+    if (name === "email" && emailError) {
+      setEmailError("");
+    }
+    if (name === "password" && passwordError) {
+      setpasswordError("");
+    }
+
+    // Set login data
     setLogData(() => {
       return {
         ...logData,
@@ -27,7 +39,17 @@ const SignIn = () => {
       body: JSON.stringify(logData),
     });
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
+
+    // Login Validation
+    if (!data.includes("Login successful")) {
+      if (data.includes("Incorrect password")) {
+        setpasswordError(data);
+      }
+      if (data.includes("Incorrect email")) {
+        setEmailError(data);
+      }
+    }
   };
 
   return (
@@ -38,6 +60,7 @@ const SignIn = () => {
         <form method="POST" onSubmit={userLogin}>
           <div className="email">
             <label htmlFor="user-email">Email</label>
+            {emailError ? <span className="error-text">{emailError}</span> : ""}
             <input
               id="user-email"
               name="email"
@@ -48,7 +71,12 @@ const SignIn = () => {
             />
           </div>
           <div className="password">
-            <label htmlFor="user-password">Password</label>
+            <label htmlFor="user-password">Password</label>{" "}
+            {passwordError ? (
+              <span className="error-text">{passwordError}</span>
+            ) : (
+              ""
+            )}
             <input
               id="user-password"
               name="password"
