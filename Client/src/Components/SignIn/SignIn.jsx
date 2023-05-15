@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./SignIn.css";
 import logoBlack from "../../Assets/Images/amazon-logo-black.png";
 import { Link } from "react-router-dom";
 
 const SignIn = () => {
+  const Navigate = useNavigate();
   const [emailError, setEmailError] = useState("");
   const [passwordError, setpasswordError] = useState("");
   const [logData, setLogData] = useState({
@@ -39,7 +41,6 @@ const SignIn = () => {
       body: JSON.stringify(logData),
     });
     const data = await response.json();
-    // console.log(data);
 
     // Login Validation
     if (!data.includes("Login successful")) {
@@ -49,6 +50,9 @@ const SignIn = () => {
       if (data.includes("Incorrect email")) {
         setEmailError(data);
       }
+    } else {
+      console.log("Login Successfull");
+      Navigate("/", { state: "" });
     }
   };
 

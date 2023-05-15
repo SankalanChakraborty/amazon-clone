@@ -52,7 +52,7 @@ app.post("/signup", async (req, res) => {
         "INSERT INTO USERS (NAME, MOBILE_NUMBER, EMAIL, PASSWORD) VALUES ($1, $2, $3, $4)",
         [fullName, mobileNum, email, hashedPassword]
       );
-      return res.json("User is successfully registered");
+      return res.json("User registration successfull");
     } else {
       return res.status(400).json("User with this email is already present");
     }

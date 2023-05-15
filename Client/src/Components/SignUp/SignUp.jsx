@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import logoBlack from "../../Assets/Images/amazon-logo-black.png";
 import "./SignUp.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const Navigate = useNavigate();
   const [newUserData, setNewUserData] = useState({
     fullName: "",
     mobileNum: "",
@@ -78,7 +79,7 @@ const SignUp = () => {
         body: JSON.stringify(newUserData),
       });
       const data = await response.json();
-      console.log(data);
+      Navigate("/signin", { state: "" });
     } else {
       console.log("Validation failed");
     }
